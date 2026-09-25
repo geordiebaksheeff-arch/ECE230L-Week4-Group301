@@ -3,7 +3,9 @@ module maxterm (
     output Y
 );
 
-assign Y = (~A | ~B | ~C | ~D)&
+assign Y = (B | C | D) & (~B | ~D) & (~A | B | ~D)
+
+/*          (~A | ~B | ~C | ~D)&
             (~A | B | ~C | D)&
             (~A | B | C | D)&
             (A | ~B | ~C | ~D)&
@@ -11,7 +13,7 @@ assign Y = (~A | ~B | ~C | ~D)&
             (A | ~B | C | D)&
             (A | B | ~C | D)&
             (A | B | C | D)
-
+*/
 
 
 ;

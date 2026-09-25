@@ -27,15 +27,6 @@ module top(
         .Y(led[2])
     );
 
-    assign A = sw[3];
-    assign B = sw[2];
-    assign C = sw[1];
-    assign D = sw[0];
-
-    assign naive_inst.Y = led[0] ;
-    assign led[1] = maxterm_inst.Y;
-    assign led[2] = maxterm_inst.Y;
-
 
 
 endmodule
