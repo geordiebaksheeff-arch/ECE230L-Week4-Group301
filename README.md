@@ -26,6 +26,7 @@ By wrapping both rows and columns, the Kmap can be represented as a torus with e
 It stands to reason that the groups we form for KMap simplification follow this same logic, each cell can only change one value as it moves to a neighbor.
 
 ### Why are the names Sum of Products and Products of Sums?
+They describe what we are doing to the groups and how they are grouped in that order, essentially it describes the structural hierarchy. Sum of product means we are taking the sum of the groups that are gathered as a product. Where Product of sum means we are taking the product of our groups that are gathered as a sum.
 
 ### Open the test.v file – how are we able to check that the signals match using XOR?
 If XOR is equal to 1 then one of the LEDs is not equal to the other. So the only accepted terms are all LEDs are on or are all off.
