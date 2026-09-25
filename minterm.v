@@ -3,16 +3,17 @@ module minterm (
     output Y
 );
 
-assign Y = (~A & ~B & ~C & D )|
+assign Y = (C & ~D) | (D & ~A & ~B) | (~C & ~D & B)
+/*
+            (~A & ~B & ~C & D )|
             (~A & ~B & C & ~D )|
             (~A & ~B & C & D )|
             (~A & B & ~C & ~D )|
             (~A & B & C & ~D )|
-            (A & ~B & C & ~D )|
+            (A & ~B & C & ~D )| 
             (A & B & ~C & ~D )|
             (A & B & C & ~D )
-
-
+*/
 ;
 
 endmodule
