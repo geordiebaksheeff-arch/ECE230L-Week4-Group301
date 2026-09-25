@@ -21,7 +21,11 @@ Summarize your learnings from the lab here.
 
 ### Why are the groups of 1’s (or 0’s) that we select in the KMap able to go across edges?
 
+Kmap rows and columns wrap around the edges and still maintain the 1 value changes only rule. 
+By wrapping both rows and columns, the Kmap can be represented as a torus with each cell still abiding by this rule.
+It stands to reason that the groups we form for KMap simplification follow this same logic, each cell can only change one value as it moves to a neighbor.
+
 ### Why are the names Sum of Products and Products of Sums?
 
 ### Open the test.v file – how are we able to check that the signals match using XOR?
-
+If XOR is equal to 1 then one of the LEDs is not equal to the other. So the only accepted terms are all LEDs are on or are all off.
